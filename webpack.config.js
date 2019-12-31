@@ -11,5 +11,13 @@ module.exports ={
     output:{
         path:path.join(__dirname,'dist'),
         filename:'[name].js'
+    },
+    module:{
+        rules:[
+            {
+                test:/.js$/,
+                use:'babel-loader'
+            }
+        ]
     }
 }
